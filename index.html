@@ -99,7 +99,7 @@
       display: grid;
       grid-template-columns: minmax(0, 1.35fr) minmax(300px, .65fr);
       gap: 28px;
-      align-items: center;
+      align-items: start;
       padding: 26px 0 34px;
       border-top: 1px solid var(--line);
     }
@@ -110,28 +110,23 @@
     }
 
     .work figure {
-      display: grid;
-      place-items: center;
-      aspect-ratio: 4 / 3;
       margin: 0;
-      min-height: 420px;
       padding: 24px;
       border: 1px solid var(--line);
       border-radius: 6px;
       background: #ece7df;
-      overflow: hidden;
     }
 
-    .work figure.tall {
-      aspect-ratio: 4 / 4.8;
-      min-height: 540px;
+    .image-link {
+      display: block;
+      text-decoration: none;
     }
 
     .work img {
       display: block;
       width: 100%;
-      height: 100%;
-      object-fit: contain;
+      height: auto;
+      border-radius: 3px;
     }
 
     .work-body {
@@ -156,6 +151,15 @@
       margin: 12px 0 0;
       color: var(--sub);
       font-size: 16px;
+    }
+
+    .work-link {
+      display: inline-block;
+      margin-top: 16px;
+      color: var(--green);
+      font-size: 15px;
+      font-weight: 700;
+      text-underline-offset: 4px;
     }
 
     .about {
@@ -201,12 +205,6 @@
       .about {
         grid-template-columns: 1fr;
       }
-
-      .work figure,
-      .work figure.tall {
-        aspect-ratio: 4 / 4.5;
-        min-height: 360px;
-      }
     }
   </style>
 </head>
@@ -216,110 +214,104 @@
       <p class="studio">合同会社しめじ</p>
       <h1>Canvaテンプレート制作見本</h1>
       <p class="intro">Canvaであとから直して使う告知物の見本です。店名、写真、日付、価格、申込先が変わっても、見出しから詳細まで自然に読めるように作っています。</p>
-      <p class="intro">店先に置く紙、SNSに出す一枚、申込先を入れて配る案内など、日々の仕事でそのまま使う場面を想定しています。</p>
+      <p class="intro">それぞれの制作例は、画像をクリックすると全体を大きく確認できます。</p>
     </div>
   </header>
 
   <main class="wrap">
     <div class="section-title">
       <h2>制作例</h2>
-      <span>8点の制作例</span>
+      <span>6点の制作例</span>
     </div>
 
     <section class="works" aria-label="制作見本一覧">
       <article class="work">
         <figure class="tall">
-          <img src="assets/01-new-product-instagram.png" alt="喫茶店の季節メニュー告知">
+          <a class="image-link" href="assets/01-new-product-instagram.png" target="_blank" rel="noopener" aria-label="喫茶店の季節メニュー告知を大きく開く">
+            <img src="assets/01-new-product-instagram.png" alt="喫茶店の季節メニュー告知">
+          </a>
         </figure>
         <div class="work-body">
           <p class="meta">Instagram post</p>
           <h3>喫茶店の季節メニュー告知</h3>
           <p>新しいメニューを出す時に、写真だけが目立って時間や予約先が見落とされることがあります。この見本では商品写真を主役にしながら、販売時間と予約先を下にまとめました。</p>
           <p>写真、商品名、販売時間、予約先を差し替えて使います。</p>
-        </div>
-      </article>
-
-      <article class="work">
-        <figure>
-          <img src="assets/02-cafe-menu-a4.png" alt="カフェメニュー表">
-        </figure>
-        <div class="work-body">
-          <p class="meta">A4 menu</p>
-          <h3>カフェメニュー表</h3>
-          <p>品名と価格を探しやすくして、営業時間と受取案内も同じ紙面で見られるようにしました。店内掲示にも、配布用にも使いやすい並びです。</p>
-          <p>価格、商品説明、営業時間、アクセスを直せます。</p>
+          <a class="work-link" href="assets/01-new-product-instagram.png" target="_blank" rel="noopener">全体画像を開く</a>
         </div>
       </article>
 
       <article class="work">
         <figure class="tall">
-          <img src="assets/03-beauty-salon-campaign.png" alt="美容サロンの初回メニュー">
+          <a class="image-link" href="assets/03-beauty-salon-campaign.png" target="_blank" rel="noopener" aria-label="美容サロンの初回メニューを大きく開く">
+            <img src="assets/03-beauty-salon-campaign.png" alt="美容サロンの初回メニュー">
+          </a>
         </figure>
         <div class="work-body">
           <p class="meta">Poster</p>
           <h3>美容サロンの初回メニュー</h3>
           <p>初回メニューは、料金、内容、予約先が一緒に見えないと迷われやすくなります。見出し、メニュー、申込先の場所を分けて、予約までの流れを追いやすくしました。</p>
           <p>施術名、価格、空き枠、予約URLを入れ替えて使います。</p>
+          <a class="work-link" href="assets/03-beauty-salon-campaign.png" target="_blank" rel="noopener">全体画像を開く</a>
         </div>
       </article>
 
       <article class="work">
         <figure class="tall">
-          <img src="assets/04-seminar-poster.png" alt="はじめてのCanva教室">
+          <a class="image-link" href="assets/04-seminar-poster.png" target="_blank" rel="noopener" aria-label="はじめてのCanva教室を大きく開く">
+            <img src="assets/04-seminar-poster.png" alt="はじめてのCanva教室">
+          </a>
         </figure>
         <div class="work-body">
           <p class="meta">Flyer</p>
           <h3>はじめてのCanva教室</h3>
           <p>何を学べるのか、いつ参加するのか、どこから申し込むのかが一目で分かることを大切にしています。スマホで見ても日程と申込先が拾いやすい順番です。</p>
           <p>タイトル、日程、講師写真、特典、申込先を差し替えます。</p>
+          <a class="work-link" href="assets/04-seminar-poster.png" target="_blank" rel="noopener">全体画像を開く</a>
         </div>
       </article>
 
       <article class="work">
         <figure>
-          <img src="assets/05-course-slide-pack.png" alt="レッスン資料の見本">
+          <a class="image-link" href="assets/05-course-slide-pack.png" target="_blank" rel="noopener" aria-label="レッスン資料の見本を大きく開く">
+            <img src="assets/05-course-slide-pack.png" alt="レッスン資料の見本">
+          </a>
         </figure>
         <div class="work-body">
           <p class="meta">Slides</p>
           <h3>レッスン資料の見本</h3>
           <p>表紙、説明、手順、ワーク、まとめの5ページを同じ調子で読めるようにした見本です。ページを増やしても、見出し位置と本文量が大きく崩れないようにしています。</p>
           <p>タイトル、本文、図解、ワーク欄、最後の案内を差し替えます。</p>
-        </div>
-      </article>
-
-      <article class="work">
-        <figure>
-          <img src="assets/06-recruit-flyer.png" alt="週3日スタッフ募集">
-        </figure>
-        <div class="work-body">
-          <p class="meta">A4 flyer</p>
-          <h3>週3日スタッフ募集</h3>
-          <p>スタッフ募集は条件だけを並べると冷たく見え、雰囲気だけに寄せると必要な情報が見つけにくくなります。仕事内容、条件、応募先を一枚で確認できるように分けました。</p>
-          <p>職種、時給、勤務地、条件、応募URLを直して使います。</p>
+          <a class="work-link" href="assets/05-course-slide-pack.png" target="_blank" rel="noopener">全体画像を開く</a>
         </div>
       </article>
 
       <article class="work">
         <figure class="tall">
-          <img src="assets/07-local-event-poster.png" alt="週末クラフト市のポスター">
+          <a class="image-link" href="assets/07-local-event-poster.png" target="_blank" rel="noopener" aria-label="週末クラフト市のポスターを大きく開く">
+            <img src="assets/07-local-event-poster.png" alt="週末クラフト市のポスター">
+          </a>
         </figure>
         <div class="work-body">
           <p class="meta">Poster</p>
           <h3>週末クラフト市のポスター</h3>
           <p>ポスターとして貼られた時に、タイトルと日付が先に目に入るようにしています。近くで見た人には、会場、時間、出店内容まで自然に読める構成です。</p>
           <p>タイトル、日付、会場、出店内容、QR欄を差し替えます。</p>
+          <a class="work-link" href="assets/07-local-event-poster.png" target="_blank" rel="noopener">全体画像を開く</a>
         </div>
       </article>
 
       <article class="work">
         <figure>
-          <img src="assets/08-instructor-profile.png" alt="講師プロフィールの紙面">
+          <a class="image-link" href="assets/08-instructor-profile.png" target="_blank" rel="noopener" aria-label="講師プロフィールの紙面を大きく開く">
+            <img src="assets/08-instructor-profile.png" alt="講師プロフィールの紙面">
+          </a>
         </figure>
         <div class="work-body">
           <p class="meta">Profile sheet</p>
           <h3>講師プロフィールの紙面</h3>
           <p>初めて会う人に渡すプロフィールは、肩書きだけでは伝わりにくいことがあります。写真、相談できること、連絡先を一枚にまとめ、人柄が出る余地を残しました。</p>
           <p>写真、名前、紹介文、サービス、連絡先を入れ替えます。</p>
+          <a class="work-link" href="assets/08-instructor-profile.png" target="_blank" rel="noopener">全体画像を開く</a>
         </div>
       </article>
     </section>

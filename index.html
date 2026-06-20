@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>合同会社しめじ 制作見本</title>
-  <meta name="description" content="合同会社しめじの制作見本。店舗、講座、採用、地域イベントなどの告知物を掲載しています。">
+  <title>合同会社しめじ Canvaテンプレート制作見本</title>
+  <meta name="description" content="合同会社しめじのCanvaテンプレート制作見本。店舗、講座、採用、地域イベントなどで使う紙面を掲載しています。">
   <style>
     :root {
       --ink: #1f2428;
@@ -53,9 +53,11 @@
 
     h1 {
       margin: 0;
-      font-size: clamp(42px, 8vw, 86px);
+      max-width: 1080px;
+      font-size: clamp(40px, 6vw, 72px);
       line-height: 1.02;
       letter-spacing: 0;
+      word-break: keep-all;
     }
 
     .intro {
@@ -63,6 +65,25 @@
       margin: 22px 0 0;
       color: var(--sub);
       font-size: 17px;
+    }
+
+    .focus {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .focus li {
+      padding: 7px 11px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--blue);
+      background: #fbf8f2;
+      font-size: 14px;
+      font-weight: 700;
     }
 
     main {
@@ -148,6 +169,25 @@
       font-size: 15px;
     }
 
+    .work-details {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 5px 10px;
+      margin: 13px 0 0;
+      color: var(--sub);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .work-details dt {
+      color: var(--blue);
+      font-weight: 700;
+    }
+
+    .work-details dd {
+      margin: 0;
+    }
+
     .about {
       display: grid;
       grid-template-columns: .9fr 1.1fr;
@@ -165,9 +205,13 @@
     }
 
     .about p {
-      margin: 0;
+      margin: 0 0 14px;
       color: var(--sub);
       font-size: 16px;
+    }
+
+    .about p:last-child {
+      margin-bottom: 0;
     }
 
     footer {
@@ -204,15 +248,20 @@
   <header>
     <div class="wrap">
       <p class="studio">合同会社しめじ</p>
-      <h1>制作見本</h1>
-      <p class="intro">お店の告知、講座資料、採用案内、地域イベントの紙面など。日本語の長い店名や日時、料金が入っても読みやすいものを作っています。</p>
+      <h1>Canvaテンプレート制作見本</h1>
+      <p class="intro">店名、写真、日付、価格、申込先を差し替えて使う前提の見本です。日本語の情報量が多い告知物でも、読む順番が迷子にならないように整えています。</p>
+      <ul class="focus" aria-label="制作で見ていること">
+        <li>日本語の読みやすさ</li>
+        <li>差し替えやすい余白</li>
+        <li>店舗・講座・採用・地域イベント</li>
+      </ul>
     </div>
   </header>
 
   <main class="wrap">
     <div class="section-title">
       <h2>Works</h2>
-      <span>最近まとめた見本</span>
+      <span>用途と編集箇所が分かる見本</span>
     </div>
 
     <section class="works" aria-label="制作見本一覧">
@@ -223,7 +272,13 @@
         <div class="work-body">
           <p class="meta">Instagram post / 店舗告知</p>
           <h3>喫茶店の季節メニュー告知</h3>
-          <p>写真の雰囲気を残し、販売時間と予約案内だけを短く入れました。</p>
+          <p>写真を大きく見せ、販売時間と予約案内を下部にまとめました。季節商品を入れ替えて使う想定です。</p>
+          <dl class="work-details">
+            <dt>使う人</dt>
+            <dd>カフェ、焼き菓子店、個人店</dd>
+            <dt>差し替え</dt>
+            <dd>写真、商品名、時間、予約先</dd>
+          </dl>
         </div>
       </article>
 
@@ -234,7 +289,13 @@
         <div class="work-body">
           <p class="meta">A4 / メニュー</p>
           <h3>カフェメニュー表</h3>
-          <p>店内で見ても写真で共有しても読めるように、品名と価格の並びをそろえています。</p>
+          <p>品名と価格の列をそろえ、営業時間と受取案内を同じ紙面で見られるようにしています。</p>
+          <dl class="work-details">
+            <dt>使う人</dt>
+            <dd>カフェ、ベーカリー、テイクアウト店</dd>
+            <dt>差し替え</dt>
+            <dd>価格、商品説明、営業時間、アクセス</dd>
+          </dl>
         </div>
       </article>
 
@@ -245,7 +306,13 @@
         <div class="work-body">
           <p class="meta">Poster / キャンペーン</p>
           <h3>美容サロンの初回メニュー</h3>
-          <p>メニュー数が多くても迷わないように、料金と予約先の位置を分けています。</p>
+          <p>メニューが増えても予約先が埋もれないように、料金、説明、申込先の場所を分けています。</p>
+          <dl class="work-details">
+            <dt>使う人</dt>
+            <dd>美容室、ネイル、整体、ヘッドスパ</dd>
+            <dt>差し替え</dt>
+            <dd>施術名、価格、空き枠、予約URL</dd>
+          </dl>
         </div>
       </article>
 
@@ -255,8 +322,14 @@
         </figure>
         <div class="work-body">
           <p class="meta">Flyer / 講座案内</p>
-          <h3>Canva講座の案内</h3>
-          <p>講座名、日時、持ち物が先に目に入るよう、情報のまとまりを小さく分けました。</p>
+          <h3>入門講座の案内</h3>
+          <p>講座名、日程、参加条件、申込先をスマホでも追いやすい順番で並べています。</p>
+          <dl class="work-details">
+            <dt>使う人</dt>
+            <dd>講師、セミナー主催者、スクール運営者</dd>
+            <dt>差し替え</dt>
+            <dd>講座名、日程、講師写真、特典、申込先</dd>
+          </dl>
         </div>
       </article>
 
@@ -267,7 +340,13 @@
         <div class="work-body">
           <p class="meta">Slides / 講座資料</p>
           <h3>講座スライドの見本</h3>
-          <p>説明、手順、ワーク、まとめが同じ調子で読めるように整えています。</p>
+          <p>表紙、説明、手順、ワーク、まとめを同じ調子で読めるように、見出し位置と余白をそろえています。</p>
+          <dl class="work-details">
+            <dt>使う人</dt>
+            <dd>オンライン講座、教材、社内研修</dd>
+            <dt>差し替え</dt>
+            <dd>タイトル、本文、図解、ワーク欄、申込案内</dd>
+          </dl>
         </div>
       </article>
 
@@ -278,7 +357,13 @@
         <div class="work-body">
           <p class="meta">A4 / 採用案内</p>
           <h3>求人案内の紙面</h3>
-          <p>仕事内容と条件を、応募する人が先に見る順番で整理しました。</p>
+          <p>仕事内容、条件、応募先を一枚で確認できるように、条件表と紹介文を分けました。</p>
+          <dl class="work-details">
+            <dt>使う人</dt>
+            <dd>店舗、スクール、小さな事務所</dd>
+            <dt>差し替え</dt>
+            <dd>職種、時給、勤務地、条件、応募URL</dd>
+          </dl>
         </div>
       </article>
 
@@ -289,7 +374,13 @@
         <div class="work-body">
           <p class="meta">Poster / 地域イベント</p>
           <h3>週末クラフト市のポスター</h3>
-          <p>日時、場所、出店内容が遠目でも拾えるように、余白を広めに取っています。</p>
+          <p>日付、会場、出店内容が遠くからでも拾えるように、大きな見出しと下部情報を分けています。</p>
+          <dl class="work-details">
+            <dt>使う人</dt>
+            <dd>商店街、地域イベント、クラフト市運営</dd>
+            <dt>差し替え</dt>
+            <dd>イベント名、日付、会場、出店内容、QR</dd>
+          </dl>
         </div>
       </article>
 
@@ -300,14 +391,23 @@
         <div class="work-body">
           <p class="meta">Profile sheet / 個人講師</p>
           <h3>講師プロフィールの紙面</h3>
-          <p>活動内容、相談できること、連絡先を一枚で見られるようにまとめました。</p>
+          <p>肩書き、相談できること、連絡先を一枚にまとめ、初めて見る人にも人柄が伝わる紙面にしています。</p>
+          <dl class="work-details">
+            <dt>使う人</dt>
+            <dd>個人講師、講座運営者、制作サポート</dd>
+            <dt>差し替え</dt>
+            <dd>写真、名前、紹介文、サービス、連絡先</dd>
+          </dl>
         </div>
       </article>
     </section>
 
     <section class="about" aria-label="会社について">
       <h2>About</h2>
-      <p>合同会社しめじは、日々の告知物や説明資料を作っています。派手さより、あとから直せること、読んだ人が迷わないことを大切にしています。</p>
+      <div>
+        <p>合同会社しめじは、日本語の情報量が多い告知物や説明資料を、Canvaで直しやすい形に整えています。</p>
+        <p>店名、価格、日付、申込先など、あとから変わるところを分けて置くこと。スマホで見ても、印刷しても、読む順番が分かること。その二つを大切にしています。</p>
+      </div>
     </section>
   </main>
 

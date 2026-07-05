@@ -129,6 +129,33 @@
       border-radius: 3px;
     }
 
+    .slide-pack {
+      background: var(--white);
+    }
+
+    .slide-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .slide-grid a {
+      display: block;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      background: var(--white);
+      text-decoration: none;
+    }
+
+    .slide-grid img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0;
+    }
+
     .work-body {
       padding: 0;
     }
@@ -243,6 +270,10 @@
       .about {
         grid-template-columns: 1fr;
       }
+
+      .slide-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -330,10 +361,27 @@
       </article>
 
       <article class="work">
-        <figure>
-          <a class="image-link" href="assets/05-course-slide-pack-overview-full.png" target="_blank" rel="noopener" aria-label="サービス紹介スライドの見本を大きく開く">
-            <img src="assets/05-course-slide-pack-overview-full.png" alt="サービス紹介スライドの見本">
-          </a>
+        <figure class="slide-pack">
+          <div class="slide-grid" aria-label="サービス紹介スライド6ページの見本">
+            <a href="assets/05-service-slide-page-01-full.png" target="_blank" rel="noopener" aria-label="サービス紹介スライド1ページ目を大きく開く">
+              <img src="assets/05-service-slide-page-01-full.png" alt="サービス紹介スライド1ページ目">
+            </a>
+            <a href="assets/05-service-slide-page-02-full.png" target="_blank" rel="noopener" aria-label="サービス紹介スライド2ページ目を大きく開く">
+              <img src="assets/05-service-slide-page-02-full.png" alt="サービス紹介スライド2ページ目">
+            </a>
+            <a href="assets/05-service-slide-page-03-full.png" target="_blank" rel="noopener" aria-label="サービス紹介スライド3ページ目を大きく開く">
+              <img src="assets/05-service-slide-page-03-full.png" alt="サービス紹介スライド3ページ目">
+            </a>
+            <a href="assets/05-service-slide-page-04-full.png" target="_blank" rel="noopener" aria-label="サービス紹介スライド4ページ目を大きく開く">
+              <img src="assets/05-service-slide-page-04-full.png" alt="サービス紹介スライド4ページ目">
+            </a>
+            <a href="assets/05-service-slide-page-05-full.png" target="_blank" rel="noopener" aria-label="サービス紹介スライド5ページ目を大きく開く">
+              <img src="assets/05-service-slide-page-05-full.png" alt="サービス紹介スライド5ページ目">
+            </a>
+            <a href="assets/05-service-slide-page-06-full.png" target="_blank" rel="noopener" aria-label="サービス紹介スライド6ページ目を大きく開く">
+              <img src="assets/05-service-slide-page-06-full.png" alt="サービス紹介スライド6ページ目">
+            </a>
+          </div>
         </figure>
         <div class="work-body">
           <p class="meta">Slides</p>
@@ -341,12 +389,12 @@
           <p>サービス内容を短く説明するための16:9スライドです。表紙、課題、提案、料金、導入の流れ、相談案内まで、話す順番が分かるように並べています。</p>
           <p>店名、サービス名、料金、期間、導入ステップ、相談ボタン、QR/URL欄を差し替えます。</p>
           <div class="work-actions">
-            <a class="work-link" href="assets/05-course-slide-pack-overview-full.png" target="_blank" rel="noopener">全体画像を開く</a>
+            <a class="work-link" href="assets/05-course-slide-pack-overview-full.png" target="_blank" rel="noopener">6ページ一覧を開く</a>
           </div>
           <dl class="work-facts">
             <div><dt>ページ</dt><dd>6ページ</dd></div>
             <div><dt>編集箇所</dt><dd>店名、サービス名、料金、期間、流れ、相談CTA、QR/URL</dd></div>
-            <div><dt>確認内容</dt><dd>6枚のスライド一覧を確認</dd></div>
+            <div><dt>確認内容</dt><dd>6枚とも個別16:9画像で確認</dd></div>
           </dl>
         </div>
       </article>
